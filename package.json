@@ -1,0 +1,26 @@
+{
+	"name": "mhlservicos",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tailwindcss -i ./input.css -o ./css/output.css",
+		"watch": "tailwindcss -i ./input.css -o ./css/output.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/isacfg/mhlservicos.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/isacfg/mhlservicos/issues"
+	},
+	"homepage": "https://github.com/isacfg/mhlservicos#readme",
+	"devDependencies": {
+		"prettier": "^2.8.3",
+		"prettier-plugin-tailwindcss": "^0.2.2",
+		"tailwindcss": "^3.2.4"
+	}
+}
