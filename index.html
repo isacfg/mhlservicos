@@ -4,10 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT AWESOME -->
+    <link
+      href="./assets/icons/fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/icons/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./assets/icons/fontawesome/css/solid.css" rel="stylesheet" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/output.css" />
     <title>MHL Serviços</title>
   </head>
-  <body>
-    <h1 class="">adadasd</h1>
+  <body class="">
+    <section class="hero flex flex-col">
+      <!-- NAVBAR -->
+      <header class="container navbar mx-auto bg-transparent">
+        <div class="flex-1">
+          <a class="cursor-pointer" href="#"
+            ><img src="./assets/logo-dark.svg" alt=""
+          /></a>
+        </div>
+        <nav class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="text-white hover:bg-white hover:text-black">Home</a>
+            </li>
+            <li>
+              <a class="text-white hover:bg-white hover:text-black">Blog</a>
+            </li>
+            <li tabindex="0">
+              <a class="text-white">
+                Máquinas
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-base-100 p-2">
+                <li><a class="text-black">Imola</a></li>
+                <li><a class="text-black">Elite</a></li>
+                <li><a class="text-black">Elite</a></li>
+                <li><a class="text-black">Elite</a></li>
+              </ul>
+            </li>
+            <li tabindex="0">
+              <a class="text-white">
+                Acessórios
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-base-100 p-2">
+                <li><a class="text-black">Lorem</a></li>
+                <li><a class="text-black">Lorem Ipsum</a></li>
+                <li><a class="text-black">Lorem Ipsum</a></li>
+                <li><a class="text-black">Lorem Ipsum</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="text-white hover:bg-white hover:text-black"
+                >Manutenção</a
+              >
+            </li>
+            <li>
+              <button
+                class="btn-outline btn mx-2 border-white bg-transparent px-7 font-serif text-base font-bold text-white hover:scale-110 hover:border-white hover:bg-white hover:text-black"
+              >
+                Whatsapp
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- FIM NAVBAR -->
+
+      <!-- HERO -->
+      <div class="container my-auto w-full">
+        <div class="texts w-3/5">
+          <p class="font-karla text-lg font-extrabold text-lightRed">
+            Mais de 20 anos Fazendo o Café Perfeito
+          </p>
+          <h1 class="font-sans text-6xl font-semibold capitalize text-white">
+            A máquina perfeita para o seu negócio
+          </h1>
+          <p class="font-sans text-base font-normal text-lightGrey">
+            Desde 1997 trabalhando com máquinas de café profissionais de grande
+            e pequeno porte
+          </p>
+        </div>
+        <div class="botoes">
+          <button
+            class="btn bg-darkRed px-7 text-white hover:scale-110 hover:border-white hover:bg-white hover:text-black"
+          >
+            Orçamento Grátis
+          </button>
+          <a class="cursor-pointer px-7 text-white hover:scale-110"
+            >Veja nossos serviços<i
+              class="fa-solid fa-arrow-right text-white"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
