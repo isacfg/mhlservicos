@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html', './node_modules/flowbite/**/*.js'],
+  content: ['./*.html'],
   theme: {
     fontFamily: {
       sans: ['Rubik', 'sans-serif'],
@@ -30,6 +30,40 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('flowbite/plugin')
+    require("daisyui")
   ],
+
+  daisyui: {
+    styled: true,
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#FF4040",
+
+          "secondary": "#f3f4f6",
+
+          "accent": "#ff4040",
+
+          "neutral": "#202020",
+
+          "base-100": "#FFFFFF",
+
+          "info": "#38bdf8",
+
+          "success": "#34d399",
+
+          "warning": "#FBBD23",
+
+          "error": "#F87272",
+        },
+      },
+    ],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  }
 }
