@@ -25,10 +25,19 @@
     <title>MHL Serviços</title>
   </head>
   <body class="">
-    <section class="hero flex flex-col">
+    <section class="hero flex h-screen flex-col">
+      <video
+        class="hero-vid"
+        src="./assets/herobg.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <div class="overlay-black"></div>
+
       <!-- NAVBAR -->
-      <header class="container navbar mx-auto bg-transparent">
-        <div class="flex-1">
+      <header class="container navbar mx-auto bg-transparent md:mx-16 md:mt-4">
+        <div class="flex-auto">
           <a class="cursor-pointer" href="#"
             ><img src="./assets/logo-dark.svg" alt=""
           /></a>
@@ -103,31 +112,74 @@
       <!-- FIM NAVBAR -->
 
       <!-- HERO -->
-      <div class="container my-auto w-full">
-        <div class="texts w-3/5">
-          <p class="font-karla text-lg font-extrabold text-lightRed">
-            Mais de 20 anos Fazendo o Café Perfeito
-          </p>
-          <h1 class="font-sans text-6xl font-semibold capitalize text-white">
-            A máquina perfeita para o seu negócio
-          </h1>
-          <p class="font-sans text-base font-normal text-lightGrey">
-            Desde 1997 trabalhando com máquinas de café profissionais de grande
-            e pequeno porte
-          </p>
+      <div class="container my-auto w-full md:mx-16 md:mt-44">
+        <div class="main">
+          <div class="texts w-3/5">
+            <p class="font-karla text-lg font-extrabold text-darkRed">
+              Mais de 20 anos Fazendo o Café Perfeito
+            </p>
+            <h1 class="font-sans text-6xl font-semibold capitalize text-white">
+              A máquina perfeita para o seu negócio
+            </h1>
+            <p class="mt-4 font-sans text-base font-normal text-lightGrey">
+              Desde 1997 trabalhando com máquinas de café profissionais de
+              grande e pequeno porte
+            </p>
+          </div>
+          <div class="botoes mt-12">
+            <button
+              class="btn border-transparent bg-darkRed px-7 font-serif text-white hover:scale-110 hover:border-white hover:bg-white hover:text-black"
+            >
+              Orçamento Grátis
+            </button>
+            <a class="cursor-pointer px-7 text-white"
+              >Veja nossos serviços<i
+                class="fa-solid fa-arrow-right m-4 text-white"
+              ></i
+            ></a>
+          </div>
         </div>
-        <div class="botoes">
-          <button
-            class="btn bg-darkRed px-7 text-white hover:scale-110 hover:border-white hover:bg-white hover:text-black"
-          >
-            Orçamento Grátis
-          </button>
-          <a class="cursor-pointer px-7 text-white hover:scale-110"
-            >Veja nossos serviços<i
-              class="fa-solid fa-arrow-right text-white"
-            ></i
-          ></a>
+        <div class="bottom mt-32">
+          <div class="location">
+            <p class="text-base font-normal text-white">
+              <i class="fa-solid fa-map-marker-alt mr-2 text-white"></i>Av.
+              Interventor Mário Câmara, 1100 - Alecrim, Natal - RN, 59032-600
+            </p>
+          </div>
+          <div class="socials mt-4">
+            <a class="cursor-pointer"
+              ><i class="fa-brands fa-instagram text-white"></i
+            ></a>
+            <a class="ml-6 cursor-pointer"
+              ><i class="fa-brands fa-whatsapp text-white"></i
+            ></a>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- FIM HERO -->
+    <!-- SOBRE -->
+    <section class="about mt-28">
+      <div class="container mx-auto">
+        <div class="left w-1/2">
+          <h2 class="font-sans text-5xl font-bold text-black">
+            <span class="text-darkRed">Quem</span> Somos
+          </h2>
+          <p class="mt-12 font-sans text-base font-normal leading-4 text-black">
+            Venda e aluguel de máquinas profissionais, com a melhor assistência
+            técnica do estado
+          </p>
+          <p class="mt-4 font-sans text-base font-normal leading-8 text-black">
+            Em 1997, surge a sociedade entre Marcio Higino e João Batista, para
+            implantar no Rio Grande do Norte, a primeira empresa de venda,
+            locação e assistência técnica para máquina de café expresso e seus
+            derivados. Vimos que havia uma necessidade de equipamentos de
+            pequeno, médio e grande porte, para hotéis, pousadas, padarias,
+            conveniências, escritórios, restaurantes e cafeterias.
+          </p>
+          <div class="line h-0.5 w-full bg-lightGrey"></div>
+        </div>
+        <div class="right w-1/2"></div>
       </div>
     </section>
   </body>
