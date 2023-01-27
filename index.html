@@ -39,7 +39,7 @@
       <header class="container navbar mx-auto bg-transparent md:mx-16 md:mt-4">
         <div class="flex-auto">
           <a class="cursor-pointer" href="#"
-            ><img src="./assets/logo-dark.svg" alt=""
+            ><img class="" src="./assets/logo-dark.svg" alt=""
           /></a>
         </div>
         <nav class="flex-none">
@@ -160,7 +160,7 @@
     <!-- FIM HERO -->
     <!-- SOBRE -->
     <section class="about mt-28">
-      <div class="container mx-auto">
+      <div class="container mx-auto flex flex-col md:flex-row">
         <div class="left w-1/2">
           <h2 class="font-sans text-5xl font-bold text-black">
             <span class="text-darkRed">Quem</span> Somos
@@ -177,10 +177,89 @@
             pequeno, médio e grande porte, para hotéis, pousadas, padarias,
             conveniências, escritórios, restaurantes e cafeterias.
           </p>
-          <div class="line h-0.5 w-full bg-lightGrey"></div>
+          <div class="line mt-4 h-0.5 w-full bg-lightGrey"></div>
+          <div class="contact mt-6">
+            <div class="phone flex items-center">
+              <img
+                src="./assets/icons/phone-circle.svg"
+                alt="ícone de telefone"
+                srcset=""
+              />
+              <p class="ml-2 font-rubik text-lg font-medium text-black">
+                (84) 3207-7759 / (84) 98851-3589
+              </p>
+            </div>
+            <div class="whatsapp mt-4 w-fit">
+              <a href="#" class="flex w-fit items-center">
+                <img
+                  src="./assets/icons/wpp-circle.svg"
+                  alt="ícone de whatsapp"
+                />
+                <p class="ml-2 font-rubik text-lg font-medium text-black">
+                  Mande uma Mensagem
+                </p>
+                <i class="fa-solid fa-arrow-right text-dark m-4"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="right w-1/2"></div>
+        <div class="right w-1/2">
+          <div class="form mx-auto -mt-52 rounded-md">
+            <form action="" class="form-control w-full p-9">
+              <p class="text-center font-rubik text-2xl font-bold text-black">
+                Solicite um <span class="text-darkRed">orçamento grátis</span>
+              </p>
+              <label class="label mt-14">
+                <span class="label-text text-base font-normal text-darkGrey"
+                  >Nome</span
+                >
+              </label>
+              <input
+                type="text"
+                placeholder=""
+                class="input-bordered input w-full rounded-none"
+              />
+              <label class="label">
+                <span class="label-text text-base font-normal text-darkGrey"
+                  >Email</span
+                >
+              </label>
+              <input
+                type="email"
+                placeholder=""
+                class="input-bordered input w-full rounded-none"
+              />
+              <label class="label">
+                <span class="label-text text-base font-normal text-darkGrey"
+                  >Assunto</span
+                >
+              </label>
+              <input
+                type="text"
+                placeholder=""
+                class="input-bordered input w-full rounded-none"
+              />
+              <label class="label">
+                <span class="label-text text-base font-normal text-darkGrey"
+                  >Mensagem</span
+                >
+              </label>
+              <input
+                type="text"
+                placeholder=""
+                class="input-bordered input h-52 w-full rounded-none"
+              />
+              <button
+                class="btn mt-6 border-transparent bg-darkRed px-7 font-serif text-white hover:scale-110 hover:border-white hover:bg-black hover:text-white"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- CARDS SERVIÇOS -->
+    <section class="services"></section>
   </body>
 </html>

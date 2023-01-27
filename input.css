@@ -12,6 +12,16 @@
   background-position: center;
 } */
 
+.form {
+  background: #ffffff;
+  /* width: 475px; */
+  width: 80%;
+  /* height: 785px; */
+  height: fit-content;
+
+  box-shadow: 0px 104px 104px -40px rgba(0, 0, 0, 0.16);
+}
+
 .hero {
   height: 120vh;
 }
@@ -47,13 +57,13 @@
 
 @media (min-width: 1440px) {
   .hero-vid {
-    max-height: 80vh !important;
+    min-height: 80vh !important;
   }
   .overlay-black {
-    max-height: 80vh !important;
+    min-height: 80vh !important;
   }
   .hero {
-    height: 80vh;
+    min-height: 80vh;
   }
 }
 
