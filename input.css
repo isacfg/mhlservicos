@@ -12,6 +12,34 @@
   background-position: center;
 } */
 
+/* * {
+  outline: 1px solid red;
+} */
+
+.card-01 {
+  background-image: url('../assets/servicos/01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-02 {
+  background-image: url('../assets/servicos/02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-03 {
+  background-image: url('../assets/servicos/03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-04 {
+  background-image: url('../assets/servicos/04.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .form {
   background: #ffffff;
   /* width: 475px; */
@@ -19,7 +47,7 @@
   /* height: 785px; */
   height: fit-content;
 
-  box-shadow: 0px 104px 104px -40px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 104px 104px -40px rgba(0, 0, 0, 0.16); */
 }
 
 .hero {
@@ -47,6 +75,20 @@
   height: 120vh;
   background: rgba(0, 0, 0, 0.35);
   z-index: -1;
+}
+
+.img-maq {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-custom {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 1024px) {
