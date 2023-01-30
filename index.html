@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,183 +26,88 @@
     <!-- NAVBAR -->
     <header class="container mx-auto">
       <nav
-        class="fixed top-0 left-0 z-20 w-full bg-transparent px-2 py-2.5 sm:px-4">
+        class="header transition-custom fixed top-0 left-0 z-20 w-full bg-transparent px-2 py-2.5 sm:px-4">
         <div
-          class="container mx-auto flex flex-wrap items-center justify-between">
-          <a href="#" class="flex items-center">
+          class="container mx-auto flex flex-wrap items-center justify-between md:flex-nowrap">
+          <a href="index.html" class="flex items-center">
             <img
+              id="logo-nav"
               src="./assets/logo-dark.svg"
               class="transition-custom mr-3 h-12 hover:scale-110 md:h-20"
               alt="MHL Serviços Logo" />
           </a>
-          <div class="flex">
-            <div class="flex md:order-2 md:ml-4">
-              <button
-                type="button"
-                class="transition-custom mr-2 rounded-lg border border-white bg-transparent px-7 py-1 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0">
-                Whatsapp
-              </button>
-              <button
-                data-collapse-toggle="navbar-sticky"
-                type="button"
-                class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-                aria-controls="navbar-sticky"
-                aria-expanded="false">
-                <span class="sr-only">Abrir menu</span>
-                <svg
-                  class="h-6 w-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button>
-            </div>
-            <div
-              class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
-              id="navbar-sticky">
-              <ul
-                class="mt-4 flex flex-col rounded-lg p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-base md:font-normal">
-                <li>
-                  <a
-                    href="#"
-                    class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
-                    >Blog</a
-                  >
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="transition-custom flex w-full items-center justify-between py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0">
-                    Máquinas
-                    <svg
-                      class="ml-1 h-5 w-5"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown maquinas -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow dark:divide-gray-600 dark:bg-gray-700">
-                    <ul
-                      class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Dashboard</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Settings</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Earnings</a
-                        >
-                      </li>
-                    </ul>
-                    <div class="py-1">
-                      <a
-                        href="#"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Sign out</a
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="transition-custom flex w-full items-center justify-between py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0">
-                    Acessórios
-                    <svg
-                      class="ml-1 h-5 w-5"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown maquinas -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow dark:divide-gray-600 dark:bg-gray-700">
-                    <ul
-                      class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Dashboard</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Settings</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Earnings</a
-                        >
-                      </li>
-                    </ul>
-                    <div class="py-1">
-                      <a
-                        href="#"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Sign out</a
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
-                    >Contato</a
-                  >
-                </li>
-              </ul>
-            </div>
+
+          <div class="flex md:order-2 md:ml-4 md:items-center">
+            <a
+              target="_blank"
+              href="https://www.bit.ly/mhlservicos"
+              type="button"
+              class="btn-wpp transition-custom mr-2 rounded-lg border border-white bg-transparent px-7 py-3 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0">
+              Whatsapp
+            </a>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+              aria-controls="navbar-sticky"
+              aria-expanded="false">
+              <span class="sr-only">Abrir menu</span>
+              <svg
+                class="h-6 w-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+            id="navbar-sticky">
+            <ul
+              class="mt-4 flex flex-col rounded-lg p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-base md:font-normal">
+              <li>
+                <a
+                  href="index.html"
+                  class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="maquinas.html"
+                  class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
+                  >Máquinas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="acessorios.html"
+                  class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
+                  >Acessórios</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="contato.html"
+                  class="transition-custom block py-2 pl-3 pr-4 text-white hover:scale-110 md:bg-transparent md:p-0"
+                  >Contato</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -235,11 +140,13 @@
               </p>
             </div>
             <div class="botoes mt-12">
-              <button
+              <a
+                target="_blank"
+                href="https://www.bit.ly/mhlservicos"
                 class="transition-custom cursor-pointer rounded-lg border-transparent bg-darkRed py-4 px-7 font-karla text-sm uppercase text-white hover:scale-110 hover:border-transparent hover:bg-white hover:text-black">
                 Orçamento Grátis
-              </button>
-              <a class="cursor-pointer px-7 text-white"
+              </a>
+              <a href="#servicos" class="cursor-pointer px-7 text-white"
                 >Veja nossos serviços<i
                   class="fa-solid fa-arrow-right m-4 text-white"></i
               ></a>
@@ -248,16 +155,26 @@
         </div>
         <div class="bottom container mx-auto mb-2">
           <div class="location">
-            <p class="text-base font-normal text-white">
-              <i class="fa-solid fa-map-marker-alt mr-2 text-white"></i>Av.
-              Interventor Mário Câmara, 1100 - Alecrim, Natal - RN, 59032-600
-            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/dir//mhl+servicos/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x7b2ff51eeaeb829:0xe3d33614983af3ab?sa=X&ved=2ahUKEwjVs8zn7u_8AhWDpJUCHZBqC6AQ9Rd6BQieARAF">
+              <p class="text-base font-normal text-white">
+                <i class="fa-solid fa-map-marker-alt mr-2 text-white"></i>Av.
+                Interventor Mário Câmara, 1100 - Alecrim, Natal - RN, 59032-600
+              </p>
+            </a>
           </div>
           <div class="socials mt-4">
-            <a class="transition-custom cursor-pointer hover:scale-110"
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mhlservicos/"
+              class="transition-custom cursor-pointer hover:scale-110"
               ><i class="fa-brands fa-instagram text-white"></i
             ></a>
-            <a class="transition-custom ml-6 cursor-pointer hover:scale-110"
+            <a
+              target="_blank"
+              href="https://www.bit.ly/mhlservicos"
+              class="transition-custom ml-6 cursor-pointer hover:scale-110"
               ><i class="fa-brands fa-whatsapp text-white"></i
             ></a>
           </div>
@@ -265,7 +182,7 @@
       </section>
       <!-- FIM HERO -->
       <!-- SOBRE -->
-      <section class="about mt-28">
+      <section id="about" class="about mt-28">
         <div class="container mx-auto flex flex-col md:flex-row">
           <div class="left w-1/2">
             <h2 class="font-sans text-5xl font-bold text-black">
@@ -297,7 +214,10 @@
                 </p>
               </div>
               <div class="whatsapp mt-4 w-fit">
-                <a href="#" class="flex w-fit items-center">
+                <a
+                  target="_blank"
+                  href="https://www.bit.ly/mhlservicos"
+                  class="flex w-fit items-center">
                   <img
                     src="./assets/icons/wpp-circle.svg"
                     alt="ícone de whatsapp" />
@@ -381,7 +301,7 @@
         </div>
       </section>
       <!-- CARDS SERVIÇOS -->
-      <section class="services mt-28">
+      <section id="servicos" class="services mt-28">
         <div class="flex h-full w-full flex-col md:flex-row">
           <!-- CARD 1 -->
           <div class="card-01 card w-1/4 rounded-tl-none">
@@ -399,7 +319,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="maquinas.html"
                   class="transition-custom mr-2 mt-6 w-1/2 rounded-lg border border-white bg-transparent px-5 py-2.5 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0"
                   >Ver mais</a
                 >
@@ -422,7 +342,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="maquinas.html"
                   class="transition-custom mr-2 mt-6 w-1/2 rounded-lg border border-white bg-transparent px-5 py-2.5 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0"
                   >Ver mais</a
                 >
@@ -446,7 +366,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="contato.html"
                   class="transition-custom mr-2 mt-6 w-1/2 rounded-lg border border-white bg-transparent px-5 py-2.5 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0"
                   >Ver mais</a
                 >
@@ -470,7 +390,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="acessorios.html"
                   class="transition-custom mr-2 mt-6 w-1/2 rounded-lg border border-white bg-transparent px-5 py-2.5 text-center font-karla text-base font-bold uppercase text-white hover:scale-110 hover:bg-white hover:text-black md:mr-0"
                   >Ver mais</a
                 >
@@ -480,7 +400,7 @@
           <!-- FIM CARD 04 -->
         </div>
       </section>
-      <section class="why-us mt-28">
+      <section id="why-us" class="why-us mt-28">
         <div class="container mx-auto">
           <h2 class="text-center text-5xl font-bold text-black">
             <span class="text-darkRed">Por que</span> nos escolher
@@ -515,7 +435,7 @@
         </div>
       </section>
       <!-- NOSSOS EQUIPAMENTOS -->
-      <section class="equipamentos mt-28">
+      <section id="equipamentos" class="equipamentos mt-28">
         <h2 class="text-center text-5xl font-bold text-black">
           Nossos
           <span class="text-darkRed">equipamentos</span>
@@ -603,7 +523,7 @@
         </div>
       </section>
       <!-- NOSSOS CLIENTES -->
-      <section class="clientes mt-28">
+      <section id="clientes" class="clientes mt-28">
         <div class="container mx-auto flex flex-col items-center md:flex-row">
           <div class="left flex w-1/2">
             <div class="text">
@@ -622,50 +542,66 @@
             <div class="flex flex-wrap">
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card.png" />
+                  <a target="_blank" href="https://www.rifoles.com.br/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card.png"
+                  /></a>
                 </div>
               </div>
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card-1.png" />
+                  <a
+                    target="_blank"
+                    href="http://www.casadopaodequeijo.com.br/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card-1.png" />
+                  </a>
                 </div>
               </div>
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card-2.png" />
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/joliecafepatisserie/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card-2.png" />
+                  </a>
                 </div>
               </div>
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card-3.png" />
+                  <a target="_blank" href="https://sodiedoces.com.br/doces/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card-3.png"
+                  /></a>
                 </div>
               </div>
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card-4.png" />
+                  <a target="_blank" href="https://www.sterbom.com.br/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card-4.png"
+                  /></a>
                 </div>
               </div>
               <div class="flex w-1/3 flex-wrap">
                 <div class="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
-                    src="./assets/parceiros/parceiros card-5.png" />
+                  <a target="_blank" href="https://tabuadecarne.com.br/">
+                    <img
+                      alt="gallery"
+                      class="transition-custom block h-full w-full rounded-lg object-cover object-center hover:scale-110"
+                      src="./assets/parceiros/parceiros card-5.png" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -673,7 +609,7 @@
         </div>
       </section>
       <!-- GALERIA -->
-      <section class="gallery mt-28">
+      <section id="gallery" class="gallery mt-28">
         <div class="container mx-auto">
           <div class="-m-1 flex flex-wrap md:-m-2">
             <div class="flex w-1/2 flex-wrap">
@@ -720,16 +656,13 @@
         </div>
       </section>
       <!-- CONTATO -->
-      <section class="contact mt-28">
+      <section id="contact" class="contact mt-28">
         <div class="container mx-auto">
           <div class="left w-1/2">
             <h2 class="font-rubik text-5xl font-bold">
               Entre em <span class="text-darkRed">contato</span>
             </h2>
-            <form class="w-full p-9">
-              <p class="text-center font-rubik text-2xl font-bold text-black">
-                Solicite um <span class="text-darkRed">orçamento grátis</span>
-              </p>
+            <form class="w-3/4">
               <div class="mb-6 mt-14">
                 <label
                   for="name"
@@ -835,6 +768,9 @@
         <a class="link-hover link">Cookie policy</a>
       </div>
     </footer>
+    <!-- FLOWBITE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- NAVBAR -->
+    <script src="./js/navbar.js"></script>
   </body>
 </html>

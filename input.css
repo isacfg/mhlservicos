@@ -16,6 +16,32 @@
   outline: 1px solid red;
 } */
 
+.header-scrolled {
+  background: #fff !important;
+}
+
+.header-scrolled img {
+  height: 58px;
+}
+
+.header-scrolled a {
+  color: #202020 !important;
+}
+
+.header-scrolled .dropdown {
+  color: #202020 !important;
+}
+
+.header-scrolled .btn-wpp {
+  border-color: #202020 !important;
+  color: #202020 !important;
+  /* max-height: 50px; */
+}
+.header-scrolled .btn-wpp:hover {
+  background: #202020 !important;
+  color: #fff !important;
+}
+
 .card-01 {
   background-image: url('../assets/servicos/01.png');
   background-repeat: no-repeat;
