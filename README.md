@@ -12,10 +12,12 @@ npm run build
 
 - [x] Navbar on Scroll
 - [ ] Add Darken overlay to services cards
-- [ ] Add all links
-- [ ] Add all images to gallery
+- [ ] Add Darken overlay to gallery
+- [x] Add all links
+- [x] Add all images to gallery
 - [ ] Add google maps
 - [ ] Add footer
+- [ ] Mobile Home
 
 <!-- LICENSE -->
 
