@@ -85,6 +85,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.services {
+  height: 500px;
+}
+
 .transition-custom {
   transition-property: all;
   transition-duration: 200ms;
