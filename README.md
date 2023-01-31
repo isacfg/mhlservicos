@@ -21,6 +21,8 @@ npm run build
 - [ ] Favicon
 - [ ] Lazy load
 - [ ] Google Site Verification and Analytics
+- [ ] Seo
+- [ ] Carrosseis
 
 <!-- CONTACT -->
 
