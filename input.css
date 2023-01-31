@@ -20,6 +20,10 @@
   background: #fff !important;
 }
 
+.menu-open-bg {
+  background: #fff !important;
+}
+
 .header-scrolled img {
   height: 58px;
 }
@@ -40,6 +44,10 @@
 .header-scrolled .btn-wpp:hover {
   background: #202020 !important;
   color: #fff !important;
+}
+
+.ham-btn-scrolled {
+  color: #202020 !important;
 }
 
 .card-01 {

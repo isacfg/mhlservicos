@@ -15,15 +15,12 @@ npm run build
 - [ ] Add Darken overlay to gallery
 - [x] Add all links
 - [x] Add all images to gallery
-- [ ] Add google maps
-- [ ] Add footer
+- [x] Add google maps
+- [x] Add footer
 - [ ] Mobile Home
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+- [ ] Favicon
+- [ ] Lazy load
+- [ ] Google Site Verification and Analytics
 
 <!-- CONTACT -->
 
