@@ -1741,10 +1741,6 @@ input:checked + .toggle-bg {
   line-height: 1rem;
 }
 
-.leading-8 {
-  line-height: 2rem;
-}
-
 .leading-9 {
   line-height: 2.25rem;
 }
@@ -2427,5 +2423,9 @@ input:checked + .toggle-bg {
 
   .md\:font-normal {
     font-weight: 400;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
   }
 }
