@@ -149,7 +149,7 @@
                 A máquina perfeita para o seu negócio
               </h1>
               <p
-                class="font-normal text-lightGrey mt-4 font-sans text-sm md:text-base">
+                class="mt-4 font-sans text-sm font-normal text-lightGrey md:text-base">
                 Desde 1997 trabalhando com máquinas de café profissionais de
                 grande e pequeno porte
               </p>
@@ -251,7 +251,10 @@
             <div
               class="form mx-auto mt-5 flex w-full rounded-md shadow-xl md:-mt-52 md:w-4/5">
               <!-- FORM -->
-              <form class="w-full p-9">
+              <form
+                action="https://formsubmit.co/7974ee5b75528e9c4e682a39bd3a7bf4"
+                method="post"
+                class="w-full p-9">
                 <p class="text-center font-rubik text-2xl font-bold text-black">
                   Solicite um <span class="text-darkRed">orçamento grátis</span>
                 </p>
@@ -263,11 +266,23 @@
                   >
                   <input
                     type="text"
+                    name="name"
                     id="name"
                     class="block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                     placeholder=""
                     required />
                 </div>
+                <!-- catch spamers -->
+                <div>
+                  <input type="text" name="_honey" style="display: none" />
+                </div>
+                <!-- disable recaptcha -->
+                <input type="hidden" name="_captcha" value="false" />
+                <!-- reload -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://mhlservicos.com/" />
                 <div class="mb-6">
                   <label
                     for="email"
@@ -276,6 +291,7 @@
                   >
                   <input
                     type="email"
+                    name="email"
                     id="email"
                     class="block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                     placeholder=""
@@ -284,13 +300,14 @@
 
                 <div class="mb-6">
                   <label
-                    for="assunto"
+                    for="_subject"
                     class="mb-2 block text-base font-normal text-darkGrey"
                     >Assunto</label
                   >
                   <input
                     type="text"
-                    id="assunto"
+                    name="_subject"
+                    id="_subject"
                     class="block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                     placeholder=""
                     required />
@@ -298,16 +315,17 @@
 
                 <div class="mb-6">
                   <label
-                    for="msg"
+                    for="message"
                     class="mb-2 block text-base font-normal text-darkGrey"
                     >Mensagem</label
                   >
-                  <input
+                  <textarea
                     type="text"
-                    id="msg"
+                    name="message"
+                    id="message"
                     class="block h-64 w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                     placeholder=""
-                    required />
+                    required></textarea>
                 </div>
 
                 <button
@@ -747,13 +765,13 @@
 
               <div class="mb-6">
                 <label
-                  for="assunto"
+                  for="_subject"
                   class="mb-2 block text-sm font-normal text-darkGrey md:text-base"
                   >Assunto</label
                 >
                 <input
                   type="text"
-                  id="assunto"
+                  id="_subject"
                   class="block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                   placeholder=""
                   required />
@@ -761,13 +779,13 @@
 
               <div class="mb-6">
                 <label
-                  for="msg"
+                  for="message"
                   class="mb-2 block text-sm font-normal text-darkGrey md:text-base"
                   >Mensagem</label
                 >
                 <input
                   type="text"
-                  id="msg"
+                  id="message"
                   class="block h-64 w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-black focus:border-blue-500 focus:ring-blue-500"
                   placeholder=""
                   required />
